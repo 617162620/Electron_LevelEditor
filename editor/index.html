@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <!-- https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>关卡编辑器</title>
+</head>
+
+<body class="mainView">
+  <!-- 路径 -->
+  <div class="pathContent">
+    <label class="pathTitle">文件路径：</label>
+    <input id="mapsPath" class="pathText"></input>
+    <button class="pathBtn" id="btn_savePath">保存配置</button>
+  </div>
+
+  <!-- 其他 -->
+  <div class="otherContent">
+    <!-- 配置 -->
+    <div class="cfgContent">
+      <button class="refreshBtn" id="btn_refreshList">刷新列表</button>
+      <!-- 配置列表 (动态添加) -->
+      <div class="cfgView" id="cfgView"></div>
+    </div>
+    <!-- 编辑 -->
+    <div class="editContent">
+      <!-- 编辑 -->
+      <div class="editView">
+        <image class="editBg" src="./images/block_bg.png"></image>
+        <div class="cellView" id="cellView"></div>
+      </div>
+      <!-- 操作 -->
+      <div class="optContent">
+        <div class="optView" id="optView">
+          <div id="optItem0" class="optItem">
+            <image class="optIcon" src="./images/gem0.png"></image>
+            <label class="optText">删除格子</label>
+          </div>
+          <div id="optItem1" class="optItem">
+            <image class="optIcon" src="./images/gem1.png"></image>
+            <label class="optText">普通格子</label>
+          </div>
+          <div id="optItem2" class="optItem">
+            <image class="optIcon" src="./images/gem2.png"></image>
+            <label class="optText">多次格子</label>
+          </div>
+          <div id="optItem3" class="optItem">
+            <image class="optIcon" src="./images/gem3.png"></image>
+            <label class="optText">永久格子</label>
+          </div>
+        </div>
+        <div class="optBtnView">
+          <button class="clearBtn" id="btn_clearBtn">清空配置</button>
+          <button class="saveCfgBtn" id="btn_saveCfgBtn">保存配置</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 逻辑脚本 -->
+  <script src="renderer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+/* 主页面 */
+.mainView {
+    width: 100%;
+    background-color: rgb(220, 220, 220);
+}
+
+/** 路径 */
+.pathContent {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pathTitle {
+    font-size: 18px;
+}
+
+.pathText {
+    width: 40%;
+    font-size: 14px;
+    color: rgb(120, 120, 120);
+}
+
+.pathBtn {
+    margin-left: 30px;
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+/** 其他 */
+.otherContent {
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+/** 配置 */
+.cfgContent {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.refreshBtn {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.cfgView {
+    margin-top: 10px;
+    width: 160px;
+    height: 580px;
+    border-radius: 10px;
+    background-color: rgb(200, 200, 200);
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    overflow: auto;
+}
+
+.cfgItem {
+    margin-top: 5px;
+    border: 0px;
+    border-radius: 10px;
+    width: 140px;
+    height: 60px;
+    background-color: rgb(180, 180, 180);
+}
+
+/** 编辑 */
+.editContent {
+    margin-top: 60px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.editView {
+    width: 360px;
+    height: 360px;
+}
+
+.editBg {
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    pointer-events: none;
+}
+
+/** 格子 */
+.cellView {
+    margin-left: 9px;
+    margin-top: 9px;
+    display: grid;
+    grid-template-columns: repeat(9, 38px);
+    grid-template-rows: repeat(9, 38px);
+}
+
+.cellItem0 {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.cellItem1 {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+    z-index: 100;
+    background-image: url(./images/gem1.png);
+}
+
+.cellItem2 {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+    z-index: 100;
+    background-image: url(./images/gem2.png);
+}
+
+.cellItem3 {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+    z-index: 100;
+    background-image: url(./images/gem3.png);
+}
+
+/** 操作 */
+.optContent {
+    margin-top: 20px;
+    width: 360px;
+    border-radius: 10px;
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.optView {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.optItem {
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.optIcon {
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+}
+
+.optText {
+    font-size: 10px;
+    pointer-events: none;
+}
+
+.optBtnView {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.clearBtn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: #93e9f0;
+}
+
+.saveCfgBtn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: #eddc96;
+}

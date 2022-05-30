@@ -1,0 +1,24 @@
+{
+  "name": "leveleditor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "packageX64": "electron-packager ./ electron --platform=darwin --arch=x64 --out=./dist --asar --app-version=1.0.0 --overwrite",
+    "packageM1": "electron-packager ./ electron --platform=darwin --arch=arm64 --out=./dist --asar --app-version=1.0.0 --overwrite",
+    "packageWin": "electron-packager ./ electron --platform=win32 --arch=x64 --out=./dist --asar --app-version=1.0.0 --overwrite",
+    "packageLinux": "electron-packager ./ electron --platform=linux --arch=x64 --out=./dist --asar --app-version=1.0.0 --overwrite"
+  },
+  "author": "Jonmi",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron/remote": "^2.0.8",
+    "electron": "^18.1.0"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.8",
+    "electron-packager": "^15.5.1"
+  }
+}
